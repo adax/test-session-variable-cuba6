@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <screen id="testsessionvariable$Department.browse"
+            template="com/company/testsessionvariable/web/department/department-browse.xml"/>
+    <screen id="testsessionvariable$Department.edit"
+            template="com/company/testsessionvariable/web/department/department-edit.xml"/>
+    <screen id="testsessionvariable$OrderLine.edit"
+            template="com/company/testsessionvariable/web/orderline/order-line-edit.xml"/>
+    <screen id="testsessionvariable$Order.browse"
+            template="com/company/testsessionvariable/web/order/order-browse.xml"/>
+    <screen id="testsessionvariable$Order.edit"
+            template="com/company/testsessionvariable/web/order/order-edit.xml"/>
+    <screen id="selectdefaultdepartment"
+            template="com/company/testsessionvariable/web/department/selectdefaultdepartment.xml"/>
+</screen-config>

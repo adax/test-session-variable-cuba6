@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.testsessionvariable.web.department.Selectdefaultdepartment"
+        messagesPack="com.company.testsessionvariable.web.department">
+    <dsContext>
+        <collectionDatasource id="departmentsDs"
+                              class="com.company.testsessionvariable.entity.Department"
+                              view="_local">
+            <query>
+                <![CDATA[select e from testsessionvariable$Department e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <vbox height="100%"
+              spacing="true">
+            <optionsList id="deptList"
+                         optionsDatasource="departmentsDs"
+                         required="true"
+                         width="100%"/>
+            <hbox spacing="true">
+                <button id="okBtn"
+                        caption="OK"
+                        invoke="onOkBtnClick"/>
+                <button id="cancelBtn"
+                        caption="Cancel"
+                        invoke="onCancelBtnClick"/>
+            </hbox>
+        </vbox>
+    </layout>
+</window>
